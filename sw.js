@@ -2,15 +2,15 @@
 // 作用：把页面文件缓存在手机上，没网也能打开。
 // 策略：先用缓存秒开，同时在后台联网检查新版本，下次打开时生效。
 // 改了 index.html 后，把下面的版本号 +1，手机就会更新缓存。
-const CACHE = 'timeblocks-v1';
+const CACHE = 'timeblocks-v2';
 const FILES = [
   './',
   './index.html',
   './manifest.webmanifest',
-  './icons/icon-192.png',
-  './icons/icon-512.png',
-  './icons/icon-maskable-512.png',
-  './icons/apple-touch-icon.png'
+  './icon-192.png',
+  './icon-512.png',
+  './icon-maskable-512.png',
+  './apple-touch-icon.png'
 ];
 
 self.addEventListener('install', event => {
